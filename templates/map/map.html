@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="map.css">
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static "map.css" %}">
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-    <script type="text/javascript" src="map.js"></script>
+    <script type="text/javascript" src="{% static "map.js" %}"></script>
     </head>
     <body>
         <div id="map-canvas"></div>
